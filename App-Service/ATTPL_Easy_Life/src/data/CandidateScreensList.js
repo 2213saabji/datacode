@@ -1,0 +1,393 @@
+import ChatWithFriends from '../screens/ChatWithFriends/ChatWithFriends';
+
+import CandidateHomeScreen from '../screens/home/CandidateHome';
+import {ComingSoonScreen} from '../screens/ComingSoon/ComingSoon';
+import WardListScreen from '../screens/ElectionManagement/WardList';
+import TemplatesListScreen from '../screens/TEMPLATELIBRARY/TemplatesListScreen';
+import CreatePostScreen from '../screens/CreatePostScreen/CreatePostScreen';
+import StopFakeVotingScreen from '../screens/STOPFAKEVOTING/StopFakeVoting';
+import EmergancyContactScreen from '../screens/EmergancyContact/EmergancyContact';
+import SocialaMediaScreen from '../screens/SocialMedia/SocilaMedia';
+import AppointmentListScreen from '../screens/CandidateAppointmentList/AppointmentListScreen';
+import DesireProgressScreen from '../screens/DesireProgress/DesireProgress';
+import DesireDetailsScreen from '../screens/DesireDetailsScreen/DesireDetailsScreen';
+import SurveyCreationScreen from '../screens/SurveyManagement/SurveyCreationScreen';
+import SurveyListScreen from '../screens/SurveyManagement/SurveyListScreen';
+import SurveyResponseListScreen from '../screens/SurveyManagement/SurveyResponseListScreen';
+import CreateCategoryScreen from '../screens/EXPENSEMANAGEMENT/CreateCategoryScreen';
+import CategoryListScreen from '../screens/EXPENSEMANAGEMENT/CategoryListScreen';
+
+export const CandidateScreens = [
+  {
+    name: 'Home',
+    component: CandidateHomeScreen,
+    icon: 'home',
+    path: '/home',
+    stack: 'Main',
+    category: 'HOME',
+  },
+  {
+    name: 'AMBULANCE MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'medkit',
+    path: '/ambulance-management',
+    stack: 'Main',
+    category: 'AMBULANCE MANAGEMENT',
+  },
+  {
+    name: 'BOOK AMBULANCE',
+    component: ComingSoonScreen,
+    icon: 'car',
+    path: '/book-ambulance',
+    stack: 'Main',
+    category: 'AMBULANCE MANAGEMENT',
+  },
+  {
+    name: 'REQUESTED LIST',
+    component: ComingSoonScreen,
+    icon: 'list',
+    path: '/requested-list',
+    stack: 'Main',
+    category: 'AMBULANCE MANAGEMENT',
+  },
+  {
+    name: 'WARD MANAGEMENT',
+    component: WardListScreen,
+    icon: 'document-text',
+    path: '/word-management',
+    stack: 'Main',
+    category: 'ELECTION MANAGEMENT',
+    params: {
+      screenName: 'Total Wards',
+      // More data categories can be added here
+    },
+  },
+
+  {
+    name: 'BOOTH MANAGEMENT',
+    component: WardListScreen,
+    icon: 'business',
+    path: '/booth-management',
+    stack: 'Main',
+    category: 'ELECTION MANAGEMENT',
+    params: {
+      screenName: 'Total Booths',
+      // More data categories can be added here
+    },
+  },
+  {
+    name: 'POLLING MANAGEMENT',
+    component: WardListScreen,
+    icon: 'stats-chart',
+    path: '/polling-management',
+    stack: 'Main',
+    category: 'ELECTION MANAGEMENT',
+    params: {
+      screenName: 'Total Polls',
+      // More data categories can be added here
+    },
+  },
+  {
+    name: 'VOTER MIGRATION',
+    component: ComingSoonScreen,
+    icon: 'swap-horizontal',
+    path: '/voter-migration',
+    stack: 'Main',
+    category: 'VOTER MIGRATION',
+  },
+  {
+    name: 'VOTER LIST',
+    component: WardListScreen,
+    icon: 'people',
+    path: '/voter-list',
+    stack: 'Main',
+    category: 'VOTER MIGRATION',
+    params: {
+      screenName: 'Total Voters',
+      // More data categories can be added here
+    },
+  },
+
+  {
+    name: 'TEMPLATE LIBRARY',
+    component: TemplatesListScreen,
+    icon: 'library',
+    path: '/template-library',
+    stack: 'Main',
+    category: 'VOTER MIGRATION',
+  },
+  {
+    name: 'CREATE YOUR POST',
+    component: CreatePostScreen,
+    icon: 'create',
+    path: '/create-your-post',
+    stack: 'Main',
+    category: 'VOTER MIGRATION',
+  },
+  {
+    name: 'STOP FAKE VOTING',
+    component: StopFakeVotingScreen,
+    icon: 'hand-left',
+    path: '/stop-fake-voting',
+    stack: 'Main',
+    category: 'ELECTION MANAGEMENT',
+  },
+  {
+    name: 'EMERGENCY CONTACT LIST',
+    component: EmergancyContactScreen,
+    icon: 'call',
+    path: '/emergency-contact-list',
+    stack: 'Main',
+    category: 'EMERGENCY SERVICES',
+  },
+  {
+    name: 'SOCIAL MEDIA',
+    component: SocialaMediaScreen,
+    icon: 'share-social',
+    path: '/social-media',
+    stack: 'Main',
+    category: 'ELECTION MANAGEMENT',
+  },
+  {
+    name: 'APPOINTMENT LIST DETAILS',
+    component: AppointmentListScreen,
+    icon: 'calendar',
+    path: '/appointment-list-details',
+    stack: 'Main',
+    category: 'APOITMENT LIST DETAILS',
+  },
+  {
+    name: 'DESIRE LIST',
+    component: DesireProgressScreen,
+    icon: 'heart',
+    path: '/desire-list',
+    stack: 'Main',
+    category: 'DESIRE LIST',
+  },
+  {
+    name: 'GOVT EMPLOYMENT DESIRE',
+    component: DesireDetailsScreen,
+    icon: 'briefcase',
+    path: '/govt-employment-desire',
+    stack: 'Main',
+    category: 'GOVT EMPLOYEMENT DESIRE',
+  },
+
+  {
+    name: 'ADD SURVEY',
+    component: SurveyCreationScreen,
+    icon: 'add-circle',
+    path: '/add-survey',
+    stack: 'Main',
+    category: 'SURVAY MANAGEMENT',
+  },
+  {
+    name: 'SURVEY LIST',
+    component: SurveyListScreen,
+    icon: 'list',
+    path: '/survey-list',
+    stack: 'Main',
+    category: 'SURVAY MANAGEMENT',
+  },
+  {
+    name: 'SURVEY RESPONSE LIST',
+    component: SurveyResponseListScreen,
+    icon: 'chatbubbles',
+    path: '/survey-response-list',
+    stack: 'Main',
+    category: 'SURVAY MANAGEMENT',
+  },
+  {
+    name: 'EXPENSE MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'cash',
+    path: '/expense-management',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'CATEGORY MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'folder',
+    path: '/category-management',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'ADD CATEGORY',
+    component: CreateCategoryScreen,
+    icon: 'add-circle',
+    path: '/add-category',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'CATEGORY LIST',
+    component: CategoryListScreen,
+    icon: 'list',
+    path: '/category-list',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'CLAIM MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'receipt',
+    path: '/claim-management',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'ADD CLAIM',
+    component: ComingSoonScreen,
+    icon: 'add-circle',
+    path: '/add-claim',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'CLAIM LIST',
+    component: ComingSoonScreen,
+    icon: 'list',
+    path: '/claim-list',
+    stack: 'Main',
+    category: 'EXPENSE MANAGEMENT',
+  },
+  {
+    name: 'PROJECT MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'construct',
+    path: '/project-management',
+    stack: 'Main',
+    category: 'PROJECT MANAGEMENT',
+  },
+  {
+    name: 'GALLERY',
+    component: ComingSoonScreen,
+    icon: 'images',
+    path: '/gallery',
+    stack: 'Main',
+    category: 'GALLARY',
+  },
+  {
+    name: 'SUGGESTION BOX',
+    component: ComingSoonScreen,
+    icon: 'chatbox',
+    path: '/suggestion-box',
+    stack: 'Main',
+    category: 'SUGGESTION BOX',
+  },
+
+  {
+    name: 'DRIVER MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'person',
+    path: '/driver-management',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'ADD DRIVER',
+    component: ComingSoonScreen,
+    icon: 'person-add',
+    path: '/add-driver',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'DRIVER LIST',
+    component: ComingSoonScreen,
+    icon: 'list',
+    path: '/driver-list',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'VEHICLE MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'car-sport',
+    path: '/vehicle-management',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'ADD VEHICLE',
+    component: ComingSoonScreen,
+    icon: 'add-circle',
+    path: '/add-vehicle',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'VEHICLE LIST',
+    component: ComingSoonScreen,
+    icon: 'list',
+    path: '/vehicle-list',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'CREATE TRIP',
+    component: ComingSoonScreen,
+    icon: 'map',
+    path: '/create-trip',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'ADD TRIP',
+    component: ComingSoonScreen,
+    icon: 'add-circle',
+    path: '/add-trip',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'TRIP MANAGEMENT',
+    component: ComingSoonScreen,
+    icon: 'navigate',
+    path: '/trip-management',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'REQUESTED TRIP LIST',
+    component: ComingSoonScreen,
+    icon: 'list',
+    path: '/requested-trip-list',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'MANAGED TRIP LIST',
+    component: ComingSoonScreen,
+    icon: 'checkmark-circle',
+    path: '/managed-trip-list',
+    stack: 'Main',
+    category: 'TRANSPOSRT MANAGEMENT',
+  },
+  {
+    name: 'EMERGENCY SERVICES',
+    component: ComingSoonScreen,
+    icon: 'alert-circle',
+    path: '/emergency-services',
+    stack: 'Main',
+    category: 'EMERGENCY SERVICES',
+  },
+  {
+    name: 'EMERGENCY HELPLINE NUMBER',
+    component: ComingSoonScreen,
+    icon: 'call',
+    path: '/emergency-helpline',
+    stack: 'Main',
+    category: 'EMERGENCY SERVICES',
+  },
+  {
+    name: 'ChatWithFriends',
+    component: ChatWithFriends,
+    icon: 'chatbubbles-outline',
+    path: '/chat-with-friends',
+    stack: 'ChatScreen',
+    category: 'CHAT WITH FRIENDS',
+  },
+];
