@@ -1,0 +1,8 @@
+<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Speech bubble -->
+  <path d="M3 3h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H8l-5 5V5a2 2 0 0 1 2-2z" stroke="black" stroke-width="2" fill="none"/>
+
+  <!-- Two small chat circles -->
+  <circle cx="9" cy="11" r="1.5" fill="black"/>
+  <circle cx="15" cy="11" r="1.5" fill="black"/>
+</svg>

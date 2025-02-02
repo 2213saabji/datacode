@@ -1,0 +1,8 @@
+<svg height="1024" viewBox="0 0 1440 1024" width="1440" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="a" cx="10%" cy="0%" gradientTransform="matrix(1 0 0 1 0 0)" r="108.474303%">
+    <stop offset="0" stop-color="#161c24" stop-opacity="0"/>
+    <stop offset=".498646968" stop-color="#161c24" stop-opacity=".8"/>
+    <stop offset="1" stop-color="#161c24"/>
+  </radialGradient>
+  <path d="m0 0h1440v1024h-1440z" fill="url(#a)" fill-rule="evenodd"/>
+</svg>
