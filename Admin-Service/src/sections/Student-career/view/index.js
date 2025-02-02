@@ -1,0 +1,10 @@
+export { default as StudentCareer } from './student-career-view';
+export { default as CollegeDetailsView } from './College-details-view';
+export { default as InstitutionEditView } from './Institution-edit-view';
+export { default as InstitutionListView } from './Institution-list-view';
+export { default as InstituteCreateView } from './Insitution-create-view';
+export { default as InstitutionDetailsView } from './Institution-details-view';
+export { default as AppointmentDetailsView } from './Appointment-details-view';
+export { default as InterestedStudentsListView } from './InterestedStudents-list-view';
+export { default as InstituteBookingCreateView } from './Institute-Booking-Create';
+export { default as CoachingCenterDetailsView } from './CochingCenter-details-view';

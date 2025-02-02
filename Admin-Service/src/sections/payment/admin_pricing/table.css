@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+
+h1{
+    margin-left: 150px;
+}
+p{
+    margin-left: 150px;
+    font-size: 14px;
+}
+body, html, ul {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Center the table */
+  .pricing-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  /* Style the table */
+  table {
+    margin-left: 150px;
+    margin-bottom: 30px;
+    width: 70%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #d6eefc;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style the table cells */
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Style the check mark */
+  .check {
+    color: green;
+  }
+
+  .chooseplane{
+    font-style: italic; 
+  }
+
+  .mprice{
+    background-color: #e9edf0;
+  }
+
+  .dot {
+    content: '\2022'; /* Unicode for bullet character */
+  }
+
+  .dot::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%; /* To make it circular */
+    margin-right: 4px; /* Adjust spacing */
+    margin-left: 30px;
+  }
+  
+
+  button{
+    background-color: rgb(123, 205, 235);
+  }

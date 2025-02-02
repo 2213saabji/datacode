@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <title>ATTPL EMS Loading</title>
+
+  <meta name="description"
+    content="ATTPLGroup is a renowned provider of five essential services, namely construction services, finance services, consultancy, solar energy solutions, and IT solutions." />
+  <meta name="keywords" content="ATTPL Infra, ATTPL Solar, ATTPL Consultancy, ATTPL Finance, ATTPL IT" />
+  <!-- Socket.io For Ambulance  -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMvHTvx8oVrT5NDIXLck6aqLacu3tIHU8&libraries=places"
+    defer></script>
+  <!-- Google Translate -->
+  <!-- <script src="http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script> -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" defer></script>
+
+  <!-- one signal integration -->
+
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    window.OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({
+        appId: '17d52215-5040-4ae0-b00c-d2ebb6b96d1e',
+        notifyButton: {
+          enable: true,
+        },
+        serviceWorkerParam: { scope: '/onesignal' },
+        serviceWorkerPath: 'push/onesignal/OneSignalSDKWorker.js',
+      });
+    });
+  </script>
+
+  <!-- one signal integration ends -->
+  <style>
+    .VIpgJd-ZVi9od-ORHb-OEVmcd {
+      display: none;
+    }
+
+    .goog-te-gadget img {
+      display: none;
+    }
+
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd,
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd:link,
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited,
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover,
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
+      display: none;
+    }
+
+    /* new css added */
+    .goog-te-gadget .goog-te-combo {
+      position: fixed;
+      right: 26%;
+      top: 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: none;
+      background-color: #fff;
+      font-weight: 600;
+      color: #000;
+      padding: 4px 5px;
+      font-size: 14px;
+      z-index: 9999999;
+      align-content: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .goog-te-gadget {
+      color: white !important;
+      /* display: none; */
+    }
+
+    .goog-te-gadget .goog-te-combo:hover {
+      background-color: #078dee;
+      /* background-color: black; */
+    }
+
+    .goog-te-gadget .goog-te-combo option {
+      color: black;
+      /* Change text color */
+      font-size: 14px;
+      /* Change font size */
+      background-color: #96c3ef;
+      /* Change background color */
+    }
+
+    @media screen and (max-width: 1024px) {
+      .goog-te-gadget .goog-te-combo {
+        top: 12px;
+        right: 42%;
+        z-index: 9999;
+        font-size: 14px;
+        padding: 5px;
+        height: 38px;
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 709px) {
+      .goog-te-gadget .goog-te-combo {
+        top: 10px;
+        right: 27%;
+        z-index: 1200;
+        font-size: 12px;
+        padding: 10px 1px;
+        max-width: 120px;
+      }
+    }
+
+    #goog-gt-tt {
+      display: none !important;
+    }
+  </style>
+  <script>
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement('google_element');
+    }
+  </script>
+  <!-- Add Razorpay SDK -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    const global = globalThis;
+  </script>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Google Translate Element -->
+  <div id="google_element"></div>
+  <script>
+    function loadGoogleTranslate() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,hi,bn,te,mr,ta,ur,gu,ml,kn,pa,as,or',
+          autoDisplay: false,
+        },
+        'google_element'
+      );
+    }
+  </script>
+</body>
+
+</html>

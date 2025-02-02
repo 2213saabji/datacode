@@ -1,0 +1,11 @@
+<svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Circle outline -->
+  <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="none"/>
+
+  <!-- Medical Cross -->
+  <rect x="10" y="7" width="4" height="10" fill="black"/>
+  <rect x="7" y="10" width="10" height="4" fill="black"/>
+
+  <!-- Pulse line -->
+  <path d="M2 12h3l2 3 3-6 2 4h3l2-3h3" stroke="black" stroke-width="2" fill="none"/>
+</svg>
